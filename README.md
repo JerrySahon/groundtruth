@@ -1,36 +1,19 @@
 # GroundTruth
 
-**Satellite change detection for Armenia, confirmed on the ground.**
+Satellite-change triage and field-evidence workflow for Armenian land inspection.
 
-→ **[jerrysahon.github.io/groundtruth](https://jerrysahon.github.io/groundtruth/)** — the pitch, 12 screens.
+**[Current application brief](https://jerrysahon.github.io/groundtruth/apply.html)** · Firebird Build, September 26–27, 2026.
 
-Built for [Firebird Build](https://hackathon.firebird.ai), Yerevan, 26–27 September 2026.
+## Existing evidence
 
-## What this is
+A Python satellite-change baseline and 92 imagery annotations: 57 drawn boxes, 16 accepted suggestions and 19 rejected suggestions. These are imagery judgments, not field confirmations. The saved evaluation has substantial false alarms; the application brief includes the counts and limitations.
 
-Armenia has no operational land-change monitoring. One third of the country sits in a
-landslide hazard zone, forest cover fell from roughly 40% in antiquity to about 7.5%
-today, and illegal cutting runs at an estimated 22 hectares a day. Nobody watches it at
-the cadence at which it actually happens.
+## Proposed sprint
 
-Free Sentinel-2 imagery already covers the whole country every five days at 10 m/pixel.
-It is enough to find a graded track, a new quarry face or a fresh clearing — and not
-enough to confirm one. So the pipeline has two halves:
+Use Codex to build human triage, a phone-based evidence submission and an exportable case record. Existing detector work will be disclosed; the sprint scope is subject to organizer rules. Autonomous drone stations are future concepts.
 
-1. **Orbit** finds candidates across the whole country, continuously, at zero imagery cost.
-2. **Ground** confirms them — a drone that lives on the slope, in a shell the landscape
-   already contains, plus soil and geodetic instruments at the same point.
+## This repository
 
-The evidence screens on the page are real Sentinel-2 frames over the Aragats district,
-45,563 ha, where the detector's proposals and a human's marks are shown side by side.
+This is the public presentation site, not the detector source repository. `apply.html` is the current application brief. `evidence-summary.json` contains aggregate archived results and hashes of the supplied source artifacts; it does not reproduce training.
 
-## Provenance
-
-- All satellite imagery: **Sentinel-2, ESA Copernicus** — free and open, 10 m/pixel.
-- The two station images are captioned **"Concept render"** on the page itself.
-- Figures are colour-coded by origin: a company's own claim, our calculation, or a
-  stated limitation. No number on the page is unattributed.
-
-## Repo
-
-Static site. `index.html` plus `img/`. Served by GitHub Pages from `main`.
+The older `index.html` pitch contains exploratory concepts and claims superseded by the current application brief. Refer to `apply.html` for present status and scope. Imagery is ESA / Copernicus Sentinel-2.

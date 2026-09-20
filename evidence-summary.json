@@ -1,0 +1,182 @@
+{
+  "status": "Archived exploratory results; not re-run for this application",
+  "prepared": "2026-09-20",
+  "annotation_count": 92,
+  "annotation_origin_counts": {
+    "принял подсказку": 16,
+    "отклонил подсказку": 19,
+    "твоя рамка": 57
+  },
+  "annotation_label_counts": {
+    "дорога": 30,
+    "нет изменения": 19,
+    "карьер, грунт": 10,
+    "стройка": 31,
+    "не уверен": 1,
+    "вырубка": 1
+  },
+  "feature_count": 39,
+  "cv": {
+    "0.5": {
+      "build": {
+        "hit": 29,
+        "total": 31
+      },
+      "road": {
+        "hit": 25,
+        "total": 30
+      },
+      "ground": {
+        "hit": 9,
+        "total": 10
+      },
+      "cut": {
+        "hit": 1,
+        "total": 1
+      },
+      "own": {
+        "hit": 51,
+        "total": 56
+      },
+      "accepted": {
+        "hit": 13,
+        "total": 16
+      },
+      "rejected": {
+        "hit": 13,
+        "total": 19
+      }
+    },
+    "0.6": {
+      "build": {
+        "hit": 24,
+        "total": 31
+      },
+      "road": {
+        "hit": 24,
+        "total": 30
+      },
+      "ground": {
+        "hit": 8,
+        "total": 10
+      },
+      "cut": {
+        "hit": 1,
+        "total": 1
+      },
+      "own": {
+        "hit": 45,
+        "total": 56
+      },
+      "accepted": {
+        "hit": 12,
+        "total": 16
+      },
+      "rejected": {
+        "hit": 10,
+        "total": 19
+      }
+    },
+    "0.7": {
+      "build": {
+        "hit": 23,
+        "total": 31
+      },
+      "road": {
+        "hit": 21,
+        "total": 30
+      },
+      "ground": {
+        "hit": 6,
+        "total": 10
+      },
+      "cut": {
+        "hit": 1,
+        "total": 1
+      },
+      "own": {
+        "hit": 42,
+        "total": 56
+      },
+      "accepted": {
+        "hit": 9,
+        "total": 16
+      },
+      "rejected": {
+        "hit": 9,
+        "total": 19
+      }
+    },
+    "0.8": {
+      "build": {
+        "hit": 15,
+        "total": 31
+      },
+      "road": {
+        "hit": 19,
+        "total": 30
+      },
+      "ground": {
+        "hit": 6,
+        "total": 10
+      },
+      "cut": {
+        "hit": 1,
+        "total": 1
+      },
+      "own": {
+        "hit": 32,
+        "total": 56
+      },
+      "accepted": {
+        "hit": 9,
+        "total": 16
+      },
+      "rejected": {
+        "hit": 6,
+        "total": 19
+      }
+    },
+    "0.9": {
+      "build": {
+        "hit": 12,
+        "total": 31
+      },
+      "road": {
+        "hit": 15,
+        "total": 30
+      },
+      "ground": {
+        "hit": 2,
+        "total": 10
+      },
+      "cut": {
+        "hit": 0,
+        "total": 1
+      },
+      "own": {
+        "hit": 22,
+        "total": 56
+      },
+      "accepted": {
+        "hit": 7,
+        "total": 16
+      },
+      "rejected": {
+        "hit": 6,
+        "total": 19
+      }
+    }
+  },
+  "limits": [
+    "Imagery judgments, not field confirmations",
+    "Selected annotation-box matching, not operational precision or national recall",
+    "Independent-region evaluation not established",
+    "Archived feature-year labels 2018/2021/2025 require scene provenance reconciliation",
+    "Full training inputs not published in this summary"
+  ],
+  "source_sha256": {
+    "truth.json": "114865224f0fbaa7ac5f19610749cae4992a17f93f01470308abf3f09749385c",
+    "report-прогон.json": "580c62b8d21087caee16e2d60fd24da52db935c0272b54560887bb619f338b85"
+  }
+}
