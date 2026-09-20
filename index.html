@@ -90,7 +90,9 @@ svg{display:block;width:100%;height:auto;overflow:visible}
 .wide{width:100%;margin:0}
 .wide img{width:100%;height:auto;display:block;border:1px solid var(--line)}
 .wide figcaption{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--faint);margin-top:8px}
-@media (max-width:760px){.shots{grid-template-columns:1fr}}
+.shots.three{grid-template-columns:1.45fr 1fr 1fr;align-items:start}
+@media (max-width:980px){.shots.three{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.shots,.shots.three{grid-template-columns:1fr}}
 .nav{
   position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:20;
   display:flex;flex-direction:column;gap:9px;
@@ -112,7 +114,7 @@ footer .in{gap:20px}
 </style>
 </head>
 <body>
-<nav class="nav" aria-label="sections"><a href="#s1" title="1"></a><a href="#s2" title="2"></a><a href="#s3" title="3"></a><a href="#s4" title="4"></a><a href="#s5" title="5"></a><a href="#s6" title="6"></a><a href="#s7" title="7"></a><a href="#s8" title="8"></a><a href="#s9" title="9"></a><a href="#s10" title="10"></a><a href="#s11" title="11"></a></nav>
+<nav class="nav" aria-label="sections"><a href="#s1" title="1"></a><a href="#s2" title="2"></a><a href="#s3" title="3"></a><a href="#s4" title="4"></a><a href="#s5" title="5"></a><a href="#s6" title="6"></a><a href="#s7" title="7"></a><a href="#s8" title="8"></a><a href="#s9" title="9"></a><a href="#s10" title="10"></a><a href="#s11" title="11"></a><a href="#s12" title="12"></a></nav>
 <section id="s1">
 <div class="in">
 <div class="eyebrow"><span>GroundTruth</span><b>Firebird Build · Yerevan · 26–27 Sep 2026</b></div>
@@ -190,13 +192,20 @@ footer .in{gap:20px}
   <div class="stat"><span class="n">cm</span><span class="k">drone resolution against 10 m from orbit</span></div>
 </div>
 <p class="lede">Off-grid solar, a heated drone dock, soil probes and a geodetic receiver. When orbit flags a slope or a clearing, the nearest box <b>flies the sortie itself</b> and returns centimetre imagery, soil state and a position fix for the same coordinate on the same day.</p>
-<div class="shots">
-  <figure class="shot"><img src="img/box1.webp" alt="An apiary hive in a forest whose lid lifts to release a drone" loading="lazy" width="1100" height="619"><figcaption><b>Forest: an apiary hive.</b> Concept render. A beekeeper box is the one object nobody walks up to and nobody reports.</figcaption></figure>
-  <figure class="shot"><img src="img/box2.webp" alt="A khachkar memorial stone that opens to release a drone" loading="lazy" width="1100" height="619"><figcaption><b>Open slope: a khachkar.</b> Concept render. Stone shell, ordinary silhouette, the dock inside.</figcaption></figure>
-</div>
 </div>
 </section>
 <section id="s8">
+<div class="in">
+<div class="eyebrow"><span>Physical AI</span><b>Hidden in plain sight</b></div>
+<h2>The hardest part of field hardware is <em>surviving the field</em>.</h2>
+<p class="lede">A white plastic mast with a solar panel on an Armenian slope has two enemies long before the weather: it gets stripped for parts, and it tells every local that someone is watching them. So the shell is not a mast. It is an object the landscape already contains, and nobody walks up to.</p>
+<div class="shots">
+  <figure class="shot"><img src="img/box1.webp" alt="An apiary hive at a forest edge whose lid lifts to release a drone" loading="lazy" width="1100" height="619"><figcaption><b>Forest edge: an apiary hive.</b> Concept render. Bee boxes stand unattended in Armenian forests for months. Nobody opens someone else&#39;s hive.</figcaption></figure>
+  <figure class="shot"><img src="img/box2.webp" alt="A khachkar memorial stone that opens to release a drone" loading="lazy" width="1100" height="619"><figcaption><b>Open slope: a khachkar.</b> Concept render. Stone shell, ordinary silhouette, the dock and the solar skin inside.</figcaption></figure>
+</div>
+</div>
+</section>
+<section id="s9">
 <div class="in">
 <div class="eyebrow"><span>Market</span><b>Where the money actually is</b></div>
 <h2>Money follows <em>obligation and risk</em>, never area.</h2>
@@ -204,7 +213,7 @@ footer .in{gap:20px}
 <p class="lede">Planet owns a constellation, books $307.7M and clears about five per cent. Cape Analytics owns <b>no satellites at all</b>, employs 107 people and sells a risk decision to most of the thirty largest US home insurers. Satelligence sells a legal duty — EUDR compliance — with forty-five people. Selling pixels by the square kilometre is the one model that does not work.</p>
 </div>
 </section>
-<section id="s9">
+<section id="s10">
 <div class="in">
 <div class="eyebrow"><span>Opportunity</span><b>The empty row</b></div>
 <h2>Every cell on the Armenian row is <em>empty</em>.</h2>
@@ -212,21 +221,19 @@ footer .in{gap:20px}
 <p class="lede">Not underserved — <b>unserved</b>. And nothing in this stack is Armenian: mountains, thin budgets, a cadastre under pressure and a shrinking forest describe Georgia, Kyrgyzstan, Tajikistan, Nepal, Albania and North Macedonia equally well. Armenia is where we build it and prove it, not the size of the market.</p>
 </div>
 </section>
-<section id="s10">
+<section id="s11">
 <div class="in">
 <div class="eyebrow"><span>Evidence</span><b>This already runs</b></div>
 <h2>We are not starting <em>from a slide</em>.</h2>
-<div class="shots">
-  <figure class="shot"><img src="img/map.webp" alt="Aragats district from orbit with detector boxes and human marks" loading="lazy" width="1154" height="1104"><figcaption><b>Aragats · 45,563 ha, already walked.</b> Orange corners are what the detector proposed. Teal circles are what a human confirmed by eye. Both layers are on the same district, October 2019 against October 2023.</figcaption></figure>
-  <div class="shot" style="gap:18px">
-    <figure class="shot"><img src="img/a3.webp" alt="Before and after: a graded track appears across a slope" loading="lazy" width="1034" height="550"><figcaption><b>A graded track, found at 10 m.</b> The detector put the box within one pixel of the human mark.</figcaption></figure>
-    <figure class="shot"><img src="img/b2.webp" alt="Before and after: construction of 0.27 hectares" loading="lazy" width="1770" height="918"><figcaption><b>Construction, 0.27 ha.</b> Below this size we do not claim a find at all.</figcaption></figure>
-  </div>
+<div class="shots three">
+  <figure class="shot"><img src="img/map.webp" alt="Aragats district from orbit with detector boxes and human marks" loading="lazy" width="1154" height="1104"><figcaption><b>Aragats · 45,563 ha, already walked.</b> Orange corners are what the detector proposed. Teal circles are what a human confirmed by eye. Same district, October 2019 against October 2023.</figcaption></figure>
+  <figure class="shot"><img src="img/a3.webp" alt="Before and after: a graded track appears across a slope" loading="lazy" width="1034" height="550"><figcaption><b>A graded track, found at 10 m.</b> The detector put the box within one pixel of the human mark.</figcaption></figure>
+  <figure class="shot"><img src="img/b2.webp" alt="Before and after: construction of 0.27 hectares" loading="lazy" width="1770" height="918"><figcaption><b>Construction, 0.27 ha.</b> Below this size we do not claim a find at all.</figcaption></figure>
 </div>
 <p class="lede">A labelling desk, a change detector and hand-verified finds over Aragats and Dilijan exist today. Every frame here is Sentinel-2, free and open, <b>10 m per pixel, every five days since 2015</b>. What is missing is not the imagery and not the model. It is the ground.</p>
 </div>
 </section>
-<section id="s11">
+<section id="s12">
 <div class="in">
 <div class="eyebrow"><span>Firebird Build</span><b>What we ship in 24 hours</b></div>
 <h2>One marz. One live alert feed. <em>Built with Codex.</em></h2>
